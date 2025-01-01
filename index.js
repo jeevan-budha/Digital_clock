@@ -1,8 +1,6 @@
 const time=document.querySelector('#time');
 const timeFormat = document.querySelector('#timeformat');
 
-
-
 const showTime=()=>{
     let data =new Date();
 
@@ -21,8 +19,9 @@ const showTime=()=>{
         time.innerHTML=`${hrs} : ${min} :${sec}`
     }
     timeFormat.innerHTML= hr>12 ?"PM"  : "AM";
-
 }
+
+
 document.addEventListener('DOMContentLoaded',()=>{
     setInterval(showTime, 1000);
 });
